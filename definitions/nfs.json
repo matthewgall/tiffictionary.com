@@ -1,0 +1,7 @@
+{
+    "name": "Network File System",
+    "definitions": [{
+        "type": "acronym",
+        "definition": "a distributed filesystem, accessible over a network connection"
+    }]
+}
