@@ -21,12 +21,7 @@
                 <p>
                 Verify the results using curl:
                 </p>
-                <pre>curl https://dnsjson.com/{{name}}.json</pre>
-
-                <p>
-                Need the results in plain text?
-                </p>
-                <pre>curl https://dnsjson.com/{{name}}.txt</pre>
+                <pre>curl https://tiffictionary.com/{{name}}.json</pre>
             </div>
         </div>
         
