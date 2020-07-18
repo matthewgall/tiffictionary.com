@@ -21,7 +21,7 @@
                 <p>
                 Verify the results using curl:
                 </p>
-                <pre>curl https://tiffictionary.com/{{name}}.json</pre>
+                <pre>curl https://tiffictionary.com/definition/{{name}}.json</pre>
             </div>
         </div>
         
