@@ -59,19 +59,19 @@ metadata:
   name: ${NAME}-ingress
   annotations:
     kubernetes.io/ingress.class: "nginx"
-    cert-manager.io/cluster-issuer: letsencrypt-prod
+    cert-manager.io/cluster-issuer: zerossl-prod
   labels:
     "use-cloudflare-solver": "true"
 spec:
   rules:
-  - host: "*.tiffictionary.com"
+  - host: "www.tiffictionary.com"
     http:
       paths:
       - path: /
         backend:
           serviceName: ${NAME}
           servicePort: http
-  - host: "*.tiff-ictionary.com"
+  - host: "www.tiff-ictionary.com"
     http:
       paths:
       - path: /
@@ -94,8 +94,8 @@ spec:
           servicePort: http
   tls:
   - hosts:
-    - '*.tiffictionary.com'
-    - '*.tiff-ictionary.com'
+    - 'www.tiffictionary.com'
+    - 'www.tiff-ictionary.com'
     - 'tiffictionary.com'
     - 'tiff-ictionary.com'
     secretName: ${NAME}-cert
